@@ -5,9 +5,8 @@
 
   let showFirstLocation = true;
 
-
-  function onSwitchLocationShowing(showLocation: boolean){
-	showFirstLocation = showLocation;
+  function onSwitchLocationShowing(showLocation: boolean) {
+    showFirstLocation = showLocation;
   }
 </script>
 
@@ -77,30 +76,37 @@
     <div>
       <h2>When and Where</h2>
       <div>
-        <button class="location-button" on:click={() => showFirstLocation = true}>
+        <button
+          class="location-button"
+          on:click={() => (showFirstLocation = true)}
+          class:selected={showFirstLocation}
+        >
           <span>icon</span>
           <p>Church Ceremony</p>
           <p>Friday, August 28, 2020</p>
           <p>01.00 PM</p>
           <p>678 Central Square Melbourne – 10160, Australia</p>
         </button>
-        <button class="location-button" on:click={() => showFirstLocation = false}>
+        <button
+          class="location-button"
+          on:click={() => (showFirstLocation = false)}
+          class:selected={!showFirstLocation}
+        >
           <span>icon</span>
           <p>Celebration Salon</p>
           <p>Friday, August 28, 2020</p>
           <p>01.00 PM</p>
           <p>678 Central Square Melbourne – 10160, Australia</p>
         </button>
-		<div>
-			{#if showFirstLocation}
-			<!-- <MapsLocation/> -->
-			show ceremony location 
-			{:else}
-			<!-- <MapsLocation/> -->
-			show celebration location 
-			{/if}
-			
-		</div>
+        <div>
+          {#if showFirstLocation}
+            <!-- <MapsLocation /> -->
+            show ceremony location
+          {:else}
+            <!-- <MapsLocation /> -->
+            show celebration location
+          {/if}
+        </div>
       </div>
     </div>
     <div>
@@ -110,7 +116,12 @@
         <button class="stay-button"> Air BnB Link </button>
       </div>
     </div>
+    <div>
+      Contacts
+      <div>Vitor and Marta</div>
+    </div>
   </div>
+  <footer>Hello</footer>
 </main>
 
 <style>
@@ -182,6 +193,12 @@
   }
 
   .location-button {
+    background-color: #f5f5f5;
+    border: solid 2px #94b4e3;
+  }
+
+  .location-button.selected {
+    background-color: #94b4e3;
   }
 
   .introduction > h2 {
