@@ -111,17 +111,36 @@
     </div>
     <div>
       <h2>If you need a place to stay</h2>
-      <div>
-        <button class="stay-button">Booking.com Link</button>
-        <button class="stay-button"> Air BnB Link </button>
+      <div class="stay-buttons-container">
+        <div class="stay-button">
+          <div class="stay-button-img" />
+          <span> Search for some accomodation on Booking.com </span>
+          <button> Booking.com Link </button>
+        </div>
+
+        <div class="stay-button">
+          <div class="stay-button-img" />
+          <span> Search for some accomodation on Air BnB </span>
+          <button> Air BnB Link </button>
+        </div>
       </div>
     </div>
-    <div>
-      Contacts
-      <div>Vitor and Marta</div>
-    </div>
   </div>
-  <footer>Hello</footer>
+  <footer>
+    <div>Contacts:</div>
+    <div class="contacts-container">
+      <div>
+        <span>Vitor</span>
+        <span>phone: 12121212</span>
+        <span>email: aaaaa@aa.com</span>
+      </div>
+      <div>
+        <span>Marta</span>
+        <span>phone: 12121212</span>
+        <span>email: aaaaa@aa.com</span>
+      </div>
+    </div>
+  </footer>
 </main>
 
 <style>
@@ -188,7 +207,7 @@
   }
 
   .introduction {
-    padding: 5rem;
+    margin: 5rem;
     line-height: 27.85px;
   }
 
@@ -203,5 +222,38 @@
 
   .introduction > h2 {
     padding: 1rem 0px;
+  }
+
+  .stay-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem 0rem;
+  }
+
+  .stay-button {
+    border: solid 1px #f5f5f5;
+    border-radius: 7px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 23rem;
+  }
+
+  footer {
+    height: 10rem;
+    background: #94b4e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contacts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 </style>
