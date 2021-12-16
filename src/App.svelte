@@ -4,9 +4,14 @@
   import MapsLocation from "./GoogleMapsLocation.svelte";
 
   let showFirstLocation = true;
-
+  let bookingLink = "https://bit.ly/3pVJMKk";
+  let airbnbLink = "https://www.airbnb.com/s/Leiria--Portugal/homes";
   function onSwitchLocationShowing(showLocation: boolean) {
     showFirstLocation = showLocation;
+  }
+
+  function navigateToLink(url: string) {
+    window.open(url, "_blank");
   }
 </script>
 
@@ -81,63 +86,82 @@
           on:click={() => (showFirstLocation = true)}
           class:selected={showFirstLocation}
         >
-          <span>icon</span>
+          <span class="material-icons" style="font-size: 3rem; padding: 1rem;">
+            church
+          </span>
           <p>Church Ceremony</p>
-          <p>Friday, August 28, 2020</p>
-          <p>01.00 PM</p>
-          <p>678 Central Square Melbourne – 10160, Australia</p>
+          <p>Igreja de Colmeias</p>
+          <p>12:00</p>
+          <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
         </button>
         <button
           class="location-button"
           on:click={() => (showFirstLocation = false)}
           class:selected={!showFirstLocation}
         >
-          <span>icon</span>
+          <span class="material-icons" style="font-size: 3rem; padding: 1rem;">
+            celebration
+          </span>
           <p>Celebration Salon</p>
-          <p>Friday, August 28, 2020</p>
-          <p>01.00 PM</p>
-          <p>678 Central Square Melbourne – 10160, Australia</p>
+          <p>Quinta dos Castanheiros, Morgatoes</p>
+          <p>14:00</p>
+          <p>
+            Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
+          </p>
         </button>
         <div>
           {#if showFirstLocation}
-            <!-- <MapsLocation /> -->
-            show ceremony location
+            <MapsLocation locationCode="Igreja+de+Colmeias" />
           {:else}
-            <!-- <MapsLocation /> -->
-            show celebration location
+            <MapsLocation locationCode="Quinta+dos+Castanheiros+-+Morgatões" />
           {/if}
         </div>
       </div>
     </div>
-    <div>
+    <div style="margin-top: 5rem;">
       <h2>If you need a place to stay</h2>
       <div class="stay-buttons-container">
         <div class="stay-button">
-          <div class="stay-button-img" />
-          <span> Search for some accomodation on Booking.com </span>
-          <button> Booking.com Link </button>
+          <div class="stay-button-img booking" />
+          <div class="stay-button-content">
+            <span> Search for some accomodation on Booking.com </span>
+            <button
+              class="booking"
+              on:click={() => navigateToLink(bookingLink)}
+            >
+              <img src="../assets/booking-icon.png" alt="booking logo" />
+            </button>
+          </div>
         </div>
 
         <div class="stay-button">
-          <div class="stay-button-img" />
-          <span> Search for some accomodation on Air BnB </span>
-          <button> Air BnB Link </button>
+          <div class="stay-button-img airbnb" />
+          <div class="stay-button-content">
+            <span> Search for some accomodation on Air BnB </span>
+            <button class="airbnb" on:click={() => navigateToLink(airbnbLink)}>
+              <img src="../assets/airbnb-icon.png" alt="airbnb logo" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <footer>
-    <div>Contacts:</div>
+    <div>Our Contacts:</div>
     <div class="contacts-container">
-      <div>
+      <div class="contact-column">
         <span>Vitor</span>
-        <span>phone: 12121212</span>
-        <span>email: aaaaa@aa.com</span>
+        <div class="contact-content">
+          <span>phone: 12121212</span>
+          <span>email: aaaaa@aa.com</span>
+        </div>
       </div>
-      <div>
+      <div class="contact-column">
         <span>Marta</span>
-        <span>phone: 12121212</span>
-        <span>email: aaaaa@aa.com</span>
+        <div class="contact-content">
+          <span>phone: 12121212</span>
+          <span>email: aaaaa@aa.com</span>
+        </div>
       </div>
     </div>
   </footer>
@@ -214,6 +238,7 @@
   .location-button {
     background-color: #f5f5f5;
     border: solid 2px #94b4e3;
+    min-width: 20rem;
   }
 
   .location-button.selected {
@@ -228,18 +253,66 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5rem 0rem;
+    margin: 3rem 0rem;
   }
 
   .stay-button {
-    border: solid 1px #f5f5f5;
-    border-radius: 7px;
+    border: solid 2px #94b4e3;
+    border-radius: 10px;
     background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20rem;
-    height: 23rem;
+    width: 21rem;
+    height: 28rem;
+    margin-left: 3rem;
+  }
+
+  .stay-button-img.booking {
+    background-image: url(../assets/booking-img.jpg);
+    border-radius: inherit;
+    height: 17rem;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .stay-button-img.airbnb {
+    background-image: url(../assets/airbnb-img.jpg);
+    border-radius: inherit;
+    height: 17rem;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .stay-button-content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 11rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stay-button-content > button {
+    margin-bottom: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: transparent;
+    background-position-x: center;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  .stay-button-content > button.booking > img {
+    border-radius: 5px;
+  }
+
+  .stay-button-content > button.airbnb > img {
+    border-radius: 5px;
   }
 
   footer {
@@ -248,12 +321,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
   .contacts-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 80%;
+    align-self: center;
+  }
+
+  .contact-column {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
   }
 </style>
