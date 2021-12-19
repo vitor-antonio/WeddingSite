@@ -5,7 +5,7 @@
 </script>
 
 <iframe title="Maps Location"
-  width="65%"
+  width="55%"
   height="460px"
   frameborder="0"
   style="border-radius: 5px; min-width:20rem; margin-top: 10px;"
