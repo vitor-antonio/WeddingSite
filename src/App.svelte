@@ -133,7 +133,7 @@
           </div>
         </div>
 
-        <div class="stay-button" style="margin-left: 1rem;">
+        <div class="stay-button airbnb">
           <div class="stay-button-img airbnb" />
           <div class="stay-button-content">
             <span> Search for some accomodation on Air BnB </span>
@@ -223,6 +223,7 @@
     padding-top: 5rem;
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 3rem;
   }
 
   .welcome-banner > * {
@@ -266,6 +267,10 @@
     flex-direction: column;
     align-items: center;
     width: 17rem;
+  }
+
+  .stay-button.airbnb {
+    margin-left: 1rem;
   }
 
   .stay-button-img.booking {
@@ -351,4 +356,17 @@
     display: flex;
     flex-direction: column;
   }
+
+
+  @media screen and (max-width: 600px) {
+  .stay-buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stay-button.airbnb {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
 </style>
