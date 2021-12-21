@@ -1,5 +1,4 @@
 <script lang="ts">
-  export let name: string;
   import DateCountDown from "./DateCountDown.svelte";
   import MapsLocation from "./GoogleMapsLocation.svelte";
 
@@ -79,7 +78,7 @@
       <!-- <MapsLocation /> -->
     </div>
     <div>
-      <h2>When and Where</h2>
+      <h2 style="margin-bottom: 2rem;">When and Where</h2>
       <div>
         <button
           class="location-button"
@@ -110,11 +109,11 @@
           </p>
         </button>
         <div>
-          {#if showFirstLocation}
-            <MapsLocation locationCode="Igreja+de+Colmeias" />
-          {:else}
-            <MapsLocation locationCode="Quinta+dos+Castanheiros+-+Morgatões" />
-          {/if}
+          <MapsLocation
+            locationCode={showFirstLocation
+              ? "Igreja+de+Colmeias"
+              : "Quinta+dos+Castanheiros+-+Morgatões"}
+          />
         </div>
       </div>
     </div>
@@ -134,7 +133,7 @@
           </div>
         </div>
 
-        <div class="stay-button">
+        <div class="stay-button" style="margin-left: 1rem;">
           <div class="stay-button-img airbnb" />
           <div class="stay-button-content">
             <span> Search for some accomodation on Air BnB </span>
@@ -245,6 +244,10 @@
     background-color: #94b4e3;
   }
 
+  .location-button.selected>*{
+    color: white !important;
+  }
+
   .introduction > h2 {
     padding: 1rem 0px;
   }
@@ -258,20 +261,17 @@
 
   .stay-button {
     border: solid 2px #94b4e3;
-    border-radius: 10px;
     background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 21rem;
-    height: 28rem;
-    margin-left: 3rem;
+    width: 17rem;
   }
 
   .stay-button-img.booking {
     background-image: url(../assets/booking-img.jpg);
     border-radius: inherit;
-    height: 17rem;
+    height: 13rem;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -280,7 +280,7 @@
   .stay-button-img.airbnb {
     background-image: url(../assets/airbnb-img.jpg);
     border-radius: inherit;
-    height: 17rem;
+    height: 13rem;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -289,10 +289,14 @@
   .stay-button-content {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 85%;
     height: 11rem;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .stay-button-content>span {
+    padding: 15px 0px;
   }
 
   .stay-button-content > button {
@@ -309,10 +313,12 @@
 
   .stay-button-content > button.booking > img {
     border-radius: 5px;
+    height: 50px;
   }
 
   .stay-button-content > button.airbnb > img {
     border-radius: 5px;
+    height: 50px;
   }
 
   footer {
