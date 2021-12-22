@@ -1,25 +1,30 @@
 <script lang="ts">
   import DateCountDown from "./DateCountDown.svelte";
   import MapsLocation from "./GoogleMapsLocation.svelte";
+  import ExpandablePanel from "./ExpandablePanel.svelte";
 
   let showFirstLocation = true;
   let bookingLink = "https://bit.ly/3pVJMKk";
   let airbnbLink = "https://www.airbnb.com/s/Leiria--Portugal/homes";
-  function onSwitchLocationShowing(showLocation: boolean) {
-    showFirstLocation = showLocation;
-  }
+
+  let windowWidth: number;
+  $: isMobile = windowWidth < 650;
 
   function navigateToLink(url: string) {
     window.open(url, "_blank");
   }
 </script>
 
+<svelte:window bind:innerWidth={windowWidth} />
 <main>
   <div class="welcome-banner">
-    <h2>We Are Getting Married!</h2>
-    <h1>Marta & Vitor</h1>
-    <p>Save The Date</p>
-    <h2>September 10th 2022</h2>
+    <div class="header-container">
+      <h2>We Are Getting Married!</h2>
+      <h1>Marta & Vitor</h1>
+      <p>Save The Date</p>
+      <h2>September 10th 2022</h2>
+    </div>
+
     <div class="graph-overlay" />
     <div class="elementor-shape graph-container">
       <svg
@@ -47,7 +52,7 @@
   <div>
     <div>
       <p>Days till wedding</p>
-      <DateCountDown />
+      <!-- <DateCountDown /> -->
     </div>
     <div class="introduction">
       <h2>Hello Children!</h2>
@@ -77,45 +82,84 @@
       </p>
       <!-- <MapsLocation /> -->
     </div>
-    <div>
+    <div class="location-section">
       <h2 style="margin-bottom: 2rem;">When and Where</h2>
-      <div>
-        <button
-          class="location-button"
-          on:click={() => (showFirstLocation = true)}
-          class:selected={showFirstLocation}
-        >
-          <span class="material-icons" style="font-size: 3rem; padding: 1rem;">
-            church
-          </span>
-          <p>Church Ceremony</p>
-          <p>Igreja de Colmeias</p>
-          <p>12:00</p>
-          <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
-        </button>
-        <button
-          class="location-button"
-          on:click={() => (showFirstLocation = false)}
-          class:selected={!showFirstLocation}
-        >
-          <span class="material-icons" style="font-size: 3rem; padding: 1rem;">
-            celebration
-          </span>
-          <p>Celebration Salon</p>
-          <p>Quinta dos Castanheiros, Morgatoes</p>
-          <p>14:00</p>
-          <p>
-            Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
-          </p>
-        </button>
+      {#if !isMobile}
         <div>
-          <MapsLocation
-            locationCode={showFirstLocation
-              ? "Igreja+de+Colmeias"
-              : "Quinta+dos+Castanheiros+-+Morgatões"}
-          />
+          <button
+            class="location-button"
+            on:click={() => (showFirstLocation = true)}
+            class:selected={showFirstLocation}
+          >
+            <span
+              class="material-icons"
+              style="font-size: 3rem; padding: 1rem;"
+            >
+              church
+            </span>
+            <p>Church Ceremony</p>
+            <p>Igreja de Colmeias</p>
+            <p>12:00</p>
+            <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
+          </button>
+          <button
+            class="location-button"
+            on:click={() => (showFirstLocation = false)}
+            class:selected={!showFirstLocation}
+          >
+            <span
+              class="material-icons"
+              style="font-size: 3rem; padding: 1rem;"
+            >
+              celebration
+            </span>
+            <p>Celebration Salon</p>
+            <p>Quinta dos Castanheiros, Morgatoes</p>
+            <p>14:00</p>
+            <p>
+              Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
+            </p>
+          </button>
+          <div>
+            <MapsLocation
+              locationCode={showFirstLocation
+                ? "Igreja+de+Colmeias"
+                : "Quinta+dos+Castanheiros+-+Morgatões"}
+            />
+          </div>
         </div>
-      </div>
+      {:else}
+        <div class="expandable-panel">
+          <ExpandablePanel name={"Church Ceremony"} iconName={"church"}>
+            <div>
+              <p>Quinta dos Castanheiros, Morgatoes</p>
+              <p>14:00</p>
+              <p>
+                Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
+              </p>
+            </div>
+            <div>
+              <MapsLocation locationCode={"Igreja+de+Colmeias"} />
+            </div>
+          </ExpandablePanel>
+        </div>
+        <div class="expandable-panel">
+          <ExpandablePanel name={"Celebration Salon"} iconName={"celebration"}>
+            <div>
+              <p>Quinta dos Castanheiros, Morgatoes</p>
+              <p>14:00</p>
+              <p>
+                Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
+              </p>
+            </div>
+            <div>
+              <MapsLocation
+                locationCode={"Quinta+dos+Castanheiros+-+Morgatões"}
+              />
+            </div>
+          </ExpandablePanel>
+        </div>
+      {/if}
     </div>
     <div style="margin-top: 5rem;">
       <h2>If you need a place to stay</h2>
@@ -149,14 +193,14 @@
     <div>Our Contacts:</div>
     <div class="contacts-container">
       <div class="contact-column">
-        <span>Vitor</span>
+        <span>Marta</span>
         <div class="contact-content">
           <span>phone: 12121212</span>
           <span>email: aaaaa@aa.com</span>
         </div>
       </div>
       <div class="contact-column">
-        <span>Marta</span>
+        <span>Vitor</span>
         <div class="contact-content">
           <span>phone: 12121212</span>
           <span>email: aaaaa@aa.com</span>
@@ -230,9 +274,24 @@
     color: white;
   }
 
+  .header-container {
+    padding-bottom: 4rem;
+  }
+
+  .header-container > * {
+    color: white;
+    padding: 5px 0px;
+  }
+
   .introduction {
     margin: 5rem;
     line-height: 27.85px;
+  }
+
+  .location-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .location-button {
@@ -245,8 +304,14 @@
     background-color: #94b4e3;
   }
 
-  .location-button.selected>*{
+  .location-button.selected > * {
     color: white !important;
+  }
+
+  .expandable-panel {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
   }
 
   .introduction > h2 {
@@ -300,7 +365,7 @@
     align-items: center;
   }
 
-  .stay-button-content>span {
+  .stay-button-content > span {
     padding: 15px 0px;
   }
 
@@ -357,16 +422,30 @@
     flex-direction: column;
   }
 
+  @media screen and (max-width: 650px) {
+    .stay-buttons-container {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  @media screen and (max-width: 600px) {
-  .stay-buttons-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .stay-button.airbnb {
+      margin-left: 0rem;
+      margin-top: 1rem;
+    }
 
-  .stay-button.airbnb {
-    margin-left: 0rem;
-    margin-top: 1rem;
+    footer {
+      height: auto;
+      padding: 1rem 0rem;
+    }
+
+    .contacts-container {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+
+    .contacts-container>.contact-column{
+      padding: 1rem 0rem;
+    }
   }
-}
 </style>
