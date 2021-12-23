@@ -21,13 +21,13 @@
     <div class="header-container">
       <h2>We Are Getting Married!</h2>
       <h1>Marta & Vitor</h1>
-      <p>Save The Date</p>
-      <h2>September 10th 2022</h2>
+      <p style="font-size: 18px; margin-top: 15px;">Save The Date</p>
+      <h2 style="padding-top: 5px;">September 10th 2022</h2>
     </div>
 
     <div class="graph-overlay" />
     <div class="elementor-shape graph-container">
-      <svg
+      <svg class="svg-graphic"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"
         preserveAspectRatio="none"
@@ -51,8 +51,7 @@
   </div>
   <div>
     <div>
-      <p>Days till wedding</p>
-      <!-- <DateCountDown /> -->
+      <DateCountDown />
     </div>
     <div class="introduction">
       <h2>Hello Children!</h2>
@@ -131,12 +130,10 @@
       {:else}
         <div class="expandable-panel">
           <ExpandablePanel name={"Church Ceremony"} iconName={"church"}>
-            <div>
-              <p>Quinta dos Castanheiros, Morgatoes</p>
-              <p>14:00</p>
-              <p>
-                Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
-              </p>
+            <div class="panel-content-details">
+              <p>Igreja de Colmeias</p>
+              <p>12:00</p>
+              <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
             </div>
             <div>
               <MapsLocation locationCode={"Igreja+de+Colmeias"} />
@@ -145,7 +142,7 @@
         </div>
         <div class="expandable-panel">
           <ExpandablePanel name={"Celebration Salon"} iconName={"celebration"}>
-            <div>
+            <div class="panel-content-details">
               <p>Quinta dos Castanheiros, Morgatoes</p>
               <p>14:00</p>
               <p>
@@ -190,7 +187,8 @@
     </div>
   </div>
   <footer>
-    <div>Our Contacts:</div>
+    <h4>You can contact us:</h4>
+    <!-- <div>Our Contacts:</div> -->
     <div class="contacts-container">
       <div class="contact-column">
         <span>Marta</span>
@@ -237,6 +235,10 @@
     bottom: -1px;
   }
 
+  .svg-graphic {
+    margin-top: -1px;
+  }
+
   .elementor-shape .elementor-shape-fill {
     fill: #fff;
     -webkit-transform-origin: center;
@@ -251,6 +253,10 @@
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100; */
+  }
+
+  h2 {
+    font-size: 28px;
   }
 
   @media (min-width: 640px) {
@@ -275,12 +281,12 @@
   }
 
   .header-container {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 
   .header-container > * {
     color: white;
-    padding: 5px 0px;
+    padding: 10px 0px;
   }
 
   .introduction {
@@ -309,9 +315,10 @@
   }
 
   .expandable-panel {
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
   }
 
   .introduction > h2 {
@@ -326,7 +333,7 @@
   }
 
   .stay-button {
-    border: solid 2px #94b4e3;
+    border: solid 1px #94b4e3;
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -446,6 +453,14 @@
 
     .contacts-container>.contact-column{
       padding: 1rem 0rem;
+    }
+
+    .panel-content-details {
+      padding: 1rem 0rem;
+    }
+
+    .panel-content-details>* {
+      padding: 0.3rem 0rem;
     }
   }
 </style>

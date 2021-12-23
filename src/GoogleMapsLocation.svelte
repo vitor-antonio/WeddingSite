@@ -5,10 +5,10 @@
 </script>
 
 <iframe title="Maps Location"
-  width="47%"
+  width="100%"
   height="460px"
   frameborder="0"
-  style="border-radius: 5px; min-width:20rem; margin-top: 10px;"
+  style="border-radius: 5px; margin-top: 10px;"
   src="https://www.google.com/maps/embed/v1/place?key={googleAPIcredentials}&q={locationCode}"
   allowfullscreen
 />

@@ -49,7 +49,8 @@
   }
 
   .panel {
-    border-bottom: 1px solid #dfdfdf;
+    border: 1px solid #dfdfdf;
+    border-radius: 0px;
   }
   .header {
     display: flex;
@@ -80,6 +81,6 @@
 
   .content {
     margin: 0;
-    padding: 0 24px 16px;
+    padding-bottom: 0px;
   }
 </style>
