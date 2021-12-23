@@ -304,6 +304,7 @@
     background-color: #f5f5f5;
     border: solid 2px #94b4e3;
     min-width: 20rem;
+    padding-bottom: 20px;
   }
 
   .location-button.selected {
