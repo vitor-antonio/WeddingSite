@@ -44,7 +44,6 @@
   .panel-button {
     display: flex;
     flex-direction: row;
-    /* place-content: unset; */
     width: 100%;
     justify-content: space-between;
   }
@@ -93,5 +92,12 @@
   .content {
     margin: 0;
     padding-bottom: 0px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .panel-button > h2 {
+      font-weight: 400;
+      font-size: 18px;
+    }
   }
 </style>
