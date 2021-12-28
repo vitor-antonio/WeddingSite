@@ -2,6 +2,7 @@
   import DateCountDown from "./DateCountDown.svelte";
   import MapsLocation from "./GoogleMapsLocation.svelte";
   import ExpandablePanel from "./ExpandablePanel.svelte";
+  import { onMount } from "svelte";
 
   let showFirstLocation = true;
   let bookingLink = "https://bit.ly/3pVJMKk";
@@ -13,21 +14,111 @@
   function navigateToLink(url: string) {
     window.open(url, "_blank");
   }
+
+  var languages = {
+    pl: {
+      firstText: "Pobieramy się!",
+      secondText: "Zapisz datę",
+      thirdText: "10 Września 2022",
+      fourthText: "Hello Children!",
+      fifthText:
+        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
+      sixthText: "When and Where",
+      seventhText: "If you need a place to stay",
+      bookingText: "Search for some accomodation on Booking.com",
+      airbnbText: "Search for some accomodation on Air BnB",
+      eigthText: "You can contact us",
+      phoneText: "phone:",
+      emailText: "email:",
+    },
+    pt: {
+      firstText: "We Are Getting Married!",
+      secondText: "Save The Date",
+      thirdText: "September 10th 2022",
+      fourthText: "Hello Children!",
+      fifthText:
+        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
+      sixthText: "When and Where",
+      seventhText: "If you need a place to stay",
+      bookingText: "Search for some accomodation on Booking.com",
+      airbnbText: "Search for some accomodation on Air BnB",
+      eigthText: "You can contact us",
+      phoneText: "phone:",
+      emailText: "email:",
+    },
+    en: {
+      firstText: "We Are Getting Married!",
+      secondText: "Save The Date",
+      thirdText: "September 10th 2022",
+      fourthText: "Hello Children!",
+      fifthText:
+        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
+      sixthText: "When and Where",
+      seventhText: "If you need a place to stay",
+      bookingText: "Search for some accomodation on Booking.com",
+      airbnbText: "Search for some accomodation on Air BnB",
+      eigthText: "You can contact us",
+      phoneText: "phone:",
+      emailText: "email:",
+    },
+  };
+
+  let currentLanguageCode = "";
+
+  function languageButtonClicked(languageCode: string) {
+    window.location.hash = languageCode;
+    location.reload();
+  }
+
+  onMount(() => {
+    var elementsToTranslate = document.querySelectorAll("[translated-text]");
+    currentLanguageCode = window.location.hash.replace("#", "");
+    console.log(currentLanguageCode);
+    if (currentLanguageCode) {
+      elementsToTranslate.forEach(function (element) {
+        element.innerHTML = languages[currentLanguageCode][element.id];
+      });
+    } else {
+      elementsToTranslate.forEach(function (element) {
+        element.innerHTML = languages["pl"][element.id];
+      });
+    }
+  });
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
 <main>
   <div class="welcome-banner">
+    <div class="language-switcher">
+      <a href="#pl" on:click={() => languageButtonClicked("pl")}>
+        <span id="lang-pl" flag-button> PL </span>
+      </a>
+      <a href="#pt" on:click={() => languageButtonClicked("pt")}>
+        <span id="lang-pt" flag-button> PT </span>
+      </a>
+      <a href="#en" on:click={() => languageButtonClicked("en")}>
+        <span id="lang-en" flag-button> EN </span>
+      </a>
+    </div>
     <div class="header-container">
-      <h2>We Are Getting Married!</h2>
+      <h2 translated-text id="firstText">We Are Getting Married!</h2>
       <h1>Marta & Vitor</h1>
-      <p style="font-size: 18px; margin-top: 15px;">Save The Date</p>
-      <h2 style="padding-top: 5px;">September 10th 2022</h2>
+      <p
+        style="font-size: 18px; margin-top: 15px;"
+        translated-text
+        id="secondText"
+      >
+        Save The Date
+      </p>
+      <h2 style="padding-top: 5px;" translated-text id="thirdText">
+        September 10th 2022
+      </h2>
     </div>
 
     <div class="graph-overlay" />
     <div class="elementor-shape graph-container">
-      <svg class="svg-graphic"
+      <svg
+        class="svg-graphic"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"
         preserveAspectRatio="none"
@@ -54,20 +145,8 @@
       <DateCountDown />
     </div>
     <div class="introduction">
-      <h2>Hello Children!</h2>
-      <p>
-        Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium
-        Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56;
-        Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus
-        acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius
-        W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera
-        bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium
-        lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56,
-        Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus
-        acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis
-        W51, Lactobacillus salivarius W24.
-      </p>
-      <p>
+      <h2 translated-text id="fourthText">Hello Children!</h2>
+      <p translated-text id="fifthText">
         Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium
         Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56;
         Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus
@@ -82,7 +161,9 @@
       <!-- <MapsLocation /> -->
     </div>
     <div class="location-section">
-      <h2 style="margin-bottom: 2rem;">When and Where</h2>
+      <h2 style="margin-bottom: 2rem;" translated-text id="sixthText">
+        When and Where
+      </h2>
       {#if !isMobile}
         <div>
           <button
@@ -129,7 +210,11 @@
         </div>
       {:else}
         <div class="expandable-panel">
-          <ExpandablePanel name={"Church Ceremony"} iconName={"church"}>
+          <ExpandablePanel
+            name={"Church Ceremony"}
+            iconName={"church"}
+            isSmallerButton={false}
+          >
             <div class="panel-content-details">
               <p>Igreja de Colmeias</p>
               <p>12:00</p>
@@ -141,7 +226,11 @@
           </ExpandablePanel>
         </div>
         <div class="expandable-panel">
-          <ExpandablePanel name={"Celebration Salon"} iconName={"celebration"}>
+          <ExpandablePanel
+            name={"Celebration Salon"}
+            iconName={"celebration"}
+            isSmallerButton={false}
+          >
             <div class="panel-content-details">
               <p>Quinta dos Castanheiros, Morgatoes</p>
               <p>14:00</p>
@@ -158,50 +247,86 @@
         </div>
       {/if}
     </div>
-    <div style="margin-top: 5rem;">
-      <h2>If you need a place to stay</h2>
-      <div class="stay-buttons-container">
-        <div class="stay-button">
-          <div class="stay-button-img booking" />
-          <div class="stay-button-content">
-            <span> Search for some accomodation on Booking.com </span>
-            <button
-              class="booking"
-              on:click={() => navigateToLink(bookingLink)}
-            >
-              <img src="../assets/booking-icon.png" alt="booking logo" />
-            </button>
+    <div
+      style="margin: 5rem 0rem; display: flex;
+    justify-content: center; "
+    >
+      <!-- <h2 translated-text id="seventhText">If you need a place to stay</h2> -->
+      <ExpandablePanel
+        name={languages[currentLanguageCode] &&
+        languages[currentLanguageCode]["seventhText"]
+          ? languages[currentLanguageCode]["seventhText"]
+          : "If you need a place to stay"}
+        isSmallerButton={true}
+        iconName={""}
+      >
+        <div class="stay-buttons-container">
+          <div class="stay-button">
+            <div class="stay-button-img booking" />
+            <div class="stay-button-content">
+              <span translated-text id="bookingText">
+                Search for some accomodation on Booking.com
+              </span>
+              <button
+                class="booking"
+                on:click={() => navigateToLink(bookingLink)}
+              >
+                <img src="../assets/booking-icon.png" alt="booking logo" />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="stay-button airbnb">
-          <div class="stay-button-img airbnb" />
-          <div class="stay-button-content">
-            <span> Search for some accomodation on Air BnB </span>
-            <button class="airbnb" on:click={() => navigateToLink(airbnbLink)}>
-              <img src="../assets/airbnb-icon.png" alt="airbnb logo" />
-            </button>
+          <div class="stay-button airbnb">
+            <div class="stay-button-img airbnb" />
+            <div class="stay-button-content">
+              <span translated-text id="airbnbText">
+                Search for some accomodation on Air BnB
+              </span>
+              <button
+                class="airbnb"
+                on:click={() => navigateToLink(airbnbLink)}
+              >
+                <img src="../assets/airbnb-icon.png" alt="airbnb logo" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </ExpandablePanel>
     </div>
   </div>
   <footer>
-    <h4>You can contact us:</h4>
+    <h4 translated-text id="eigthText">You can contact us:</h4>
     <!-- <div>Our Contacts:</div> -->
     <div class="contacts-container">
       <div class="contact-column">
         <span>Marta</span>
         <div class="contact-content">
-          <span>phone: 12121212</span>
-          <span>email: aaaaa@aa.com</span>
+          <div>
+            <span translated-text id="phoneText">phone: </span><span>
+              12121212</span
+            >
+          </div>
+          <div>
+            <span translated-text id="emailText">email:</span><span>
+              aaaaa@aa.com</span
+            >
+          </div>
         </div>
       </div>
       <div class="contact-column">
         <span>Vitor</span>
         <div class="contact-content">
-          <span>phone: 12121212</span>
-          <span>email: aaaaa@aa.com</span>
+          <div>
+            <span translated-text id="phoneText">phone: </span><span>
+              12121212</span
+            >
+          </div>
+
+          <div>
+            <span translated-text id="emailText">email: </span><span>
+              aaaaa@aa.com</span
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -277,6 +402,21 @@
   }
 
   .welcome-banner > * {
+    color: white;
+  }
+
+  .language-switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0rem 7rem 1rem 0rem;
+  }
+
+  .language-switcher > a {
+    margin: 0rem 0.5rem;
+  }
+
+  .language-switcher > a > span {
     color: white;
   }
 
@@ -400,13 +540,17 @@
   }
 
   footer {
-    height: 10rem;
     background: #94b4e3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 500;
+    padding: 3rem 0rem 5rem 0rem;
+  }
+
+  footer > * {
+    color: white;
   }
 
   .contacts-container {
@@ -425,9 +569,17 @@
     font-weight: 500;
   }
 
+  .contact-column > * {
+    color: white;
+  }
+
   .contact-content {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact-content > div > * {
+    color: white;
   }
 
   @media screen and (max-width: 650px) {
@@ -452,7 +604,7 @@
       height: auto;
     }
 
-    .contacts-container>.contact-column{
+    .contacts-container > .contact-column {
       padding: 1rem 0rem;
     }
 
@@ -460,7 +612,7 @@
       padding: 1rem 0rem;
     }
 
-    .panel-content-details>* {
+    .panel-content-details > * {
       padding: 0.3rem 0rem;
     }
   }

@@ -3,11 +3,12 @@
 
   export let name = "";
   export let iconName = "";
+  export let isSmallerButton = false;
   export let group = "Item 1";
   $: active = group === name;
 </script>
 
-<div class="panel">
+<div class="panel" class:smaller={isSmallerButton}>
   <button
     class="header"
     on:click={() => {
@@ -18,7 +19,7 @@
       <span class="material-icons" style="font-size: 2rem;">
         {iconName}
       </span>
-      <span>{name}</span>
+      <h2>{name}</h2>
       <i class="icon" class:active>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +66,16 @@
     text-align: left;
     outline: none;
   }
+
+  .smaller {
+    width: 650px;
+    border: none;
+  }
+
+  .h2 {
+    font-size: 28px;
+  }
+
   .header:active {
     background: none;
   }
