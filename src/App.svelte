@@ -598,6 +598,13 @@
       padding: 1rem 0rem;
     }
 
+    .welcome-banner {
+      padding-top: 2rem;
+    }
+    .language-switcher {
+      margin: 0rem 2rem 3rem 0rem;
+    }
+
     .contacts-container {
       flex-direction: column;
       justify-content: center;
