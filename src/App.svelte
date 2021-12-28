@@ -602,7 +602,8 @@
       padding-top: 2rem;
     }
     .language-switcher {
-      margin: 0rem 2rem 3rem 0rem;
+      margin: 0rem 0rem 3rem 0rem;
+      justify-content: center;
     }
 
     .contacts-container {
