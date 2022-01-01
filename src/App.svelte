@@ -27,7 +27,7 @@
       seventhText: "If you need a place to stay",
       bookingText: "Search for some accomodation on Booking.com",
       airbnbText: "Search for some accomodation on Airbnb",
-      eigthText: "You can contact us",
+      eigthText: "Contacts",
       phoneText: "phone:",
       emailText: "email:",
     },
@@ -42,7 +42,7 @@
       seventhText: "If you need a place to stay",
       bookingText: "Search for some accomodation on Booking.com",
       airbnbText: "Search for some accomodation on Airbnb",
-      eigthText: "You can contact us",
+      eigthText: "Contacts",
       phoneText: "phone:",
       emailText: "email:",
     },
@@ -57,7 +57,7 @@
       seventhText: "If you need a place to stay",
       bookingText: "Search for some accomodation on Booking.com",
       airbnbText: "Search for some accomodation on Airbnb",
-      eigthText: "You can contact us",
+      eigthText: "Contacts",
       phoneText: "phone:",
       emailText: "email:",
     },
@@ -328,7 +328,7 @@
     </div>
   </div>
   <footer>
-    <h4 translated-text id="eigthText" class="sub-title-font-size">
+    <h4 translated-text id="eigthText" class="title-font-size">
       You can contact us:
     </h4>
     <!-- <div>Our Contacts:</div> -->
@@ -338,12 +338,12 @@
         <div class="contact-content">
           <div>
             <span translated-text id="phoneText">phone: </span><span>
-              12121212</span
+              +48 602 624 712</span
             >
           </div>
           <div>
             <span translated-text id="emailText">email:</span><span>
-              aaaaa@aa.com</span
+              kruczykmarta@gmail.com</span
             >
           </div>
         </div>
@@ -353,13 +353,14 @@
         <div class="contact-content">
           <div>
             <span translated-text id="phoneText">phone: </span><span>
-              12121212</span
+              +48 536 553 653 <br />
+              +351 924 243 851</span
             >
           </div>
 
           <div>
             <span translated-text id="emailText">email: </span><span>
-              aaaaa@aa.com</span
+              jiggseven@gmail.com</span
             >
           </div>
         </div>
@@ -583,7 +584,7 @@
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 500;
-    padding: 3rem 0rem 5rem 0rem;
+    padding: 2rem 0rem 3rem 0rem;
   }
 
   footer > * {
@@ -596,7 +597,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
-    margin-top: 20px;
+    margin-top: 10px;
     align-self: center;
   }
 
@@ -617,7 +618,7 @@
   }
 
   .contact-column > span {
-    font-size: 22px;
+    font-size: 25px;
     font-family: "Alice", serif;
   }
 
@@ -625,6 +626,8 @@
     color: white;
     margin: 5px;
     font-family: "Alice", serif;
+    font-size: 16px;
+    letter-spacing: 1px;
   }
 
   .title-font-size {
@@ -633,7 +636,7 @@
   }
 
   .sub-title-font-size {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 400;
   }
 
