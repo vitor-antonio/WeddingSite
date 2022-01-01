@@ -65,6 +65,7 @@
   .time-unit > span {
     color: #2a2a2a;
     font-family: 'Alice', serif;
+    font-size: 24px;
   }
 
   @media screen and (max-width: 650px) {

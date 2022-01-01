@@ -8,7 +8,7 @@
   width="100%"
   height="460px"
   frameborder="0"
-  style="border-radius: 5px; margin-top: 10px;"
+  style="border-radius: 0px; padding-right: 1px;"
   src="https://www.google.com/maps/embed/v1/place?key={googleAPIcredentials}&q={locationCode}"
   allowfullscreen
 />

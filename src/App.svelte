@@ -22,11 +22,11 @@
       thirdText: "10 Września 2022",
       fourthText: "Hello Children!",
       fifthText:
-        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
+        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
       sixthText: "When and Where",
       seventhText: "If you need a place to stay",
       bookingText: "Search for some accomodation on Booking.com",
-      airbnbText: "Search for some accomodation on Air BnB",
+      airbnbText: "Search for some accomodation on Airbnb",
       eigthText: "You can contact us",
       phoneText: "phone:",
       emailText: "email:",
@@ -37,11 +37,11 @@
       thirdText: "September 10th 2022",
       fourthText: "Hello Children!",
       fifthText:
-        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
+        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
       sixthText: "When and Where",
       seventhText: "If you need a place to stay",
       bookingText: "Search for some accomodation on Booking.com",
-      airbnbText: "Search for some accomodation on Air BnB",
+      airbnbText: "Search for some accomodation on Airbnb",
       eigthText: "You can contact us",
       phoneText: "phone:",
       emailText: "email:",
@@ -52,11 +52,11 @@
       thirdText: "September 10th 2022",
       fourthText: "Hello Children!",
       fifthText:
-        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
+        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
       sixthText: "When and Where",
       seventhText: "If you need a place to stay",
       bookingText: "Search for some accomodation on Booking.com",
-      airbnbText: "Search for some accomodation on Air BnB",
+      airbnbText: "Search for some accomodation on Airbnb",
       eigthText: "You can contact us",
       phoneText: "phone:",
       emailText: "email:",
@@ -104,20 +104,15 @@
       <h2
         translated-text
         id="firstText"
-        style="font-size: 16px; font-weight: 400; letter-spacing: 3px;"
+        style="letter-spacing: 3px;"
+        class="text-font-size"
       >
         We Are Getting Married!
       </h2>
-      <h1 style="font-size: 90px; font-weight: 400;">Marta & Vitor</h1>
-      <!-- <p
-        style="font-size: 15px; font-weight: 300; margin-top: 15px;"
-        translated-text
-        id="secondText"
-      >
-        Save The Date
-      </p> -->
+      <h1 style="font-size: 64px; font-weight: 400;">Marta & Vitor</h1>
       <h2
-        style="font-size: 40px; font-weight: 400; padding-top: 5px;"
+        style="padding-top: 5px;"
+        class="title-font-size"
         translated-text
         id="thirdText"
       >
@@ -155,11 +150,7 @@
       <DateCountDown />
     </div>
     <div class="introduction">
-      <h2
-        translated-text
-        id="fourthText"
-        style="font-size: 40px; font-weight: 400;"
-      >
+      <h2 translated-text id="fourthText" class="title-font-size">
         Hello Children!
       </h2>
       <p translated-text id="fifthText">
@@ -172,13 +163,21 @@
         lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56,
         Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus
         acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis
-        W51, Lactobacillus salivarius W24.
+        W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23;
+        Lactobacillus salivarius W24; otoczkakapsułki:
+        hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109
+        CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52,
+        Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis
+        W19, Lactococcus lactis W58, Lactobacillus acidophilus W37,
+        Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus
+        salivarius W24.
       </p>
       <!-- <MapsLocation /> -->
     </div>
     <div class="location-section">
       <h2
-        style="font-size: 40px; font-weight: 400; margin-bottom: 2rem;"
+        style="margin-bottom: 2rem;"
+        class="title-font-size"
         translated-text
         id="sixthText"
       >
@@ -197,7 +196,7 @@
             >
               church
             </span>
-            <p>Church Ceremony</p>
+            <h3 style="margin-bottom: 10px;">Church Ceremony</h3>
             <p>Igreja de Colmeias</p>
             <p>12:00</p>
             <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
@@ -213,7 +212,7 @@
             >
               celebration
             </span>
-            <p>Celebration Salon</p>
+            <h3 style="margin-bottom: 10px;">Celebration Salon</h3>
             <p>Quinta dos Castanheiros, Morgatoes</p>
             <p>14:00</p>
             <p>
@@ -233,13 +232,16 @@
           <ExpandablePanel
             name={"Church Ceremony"}
             iconName={"church"}
+            place={"Igreja de Colmeias"}
+            time={"12:00"}
+            location={"R. Central nº3411 <br /> 2420-205 Leiria, Portugal"}
             isSmallerButton={false}
           >
-            <div class="panel-content-details">
+            <!-- <div class="panel-content-details">
               <p>Igreja de Colmeias</p>
               <p>12:00</p>
               <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
-            </div>
+            </div> -->
             <div>
               <MapsLocation locationCode={"Igreja+de+Colmeias"} />
             </div>
@@ -249,15 +251,18 @@
           <ExpandablePanel
             name={"Celebration Salon"}
             iconName={"celebration"}
+            place={"Quinta dos Castanheiros, Morgatoes"}
+            time={"14:00"}
+            location={"Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria"}
             isSmallerButton={false}
           >
-            <div class="panel-content-details">
+            <!-- <div class="panel-content-details">
               <p>Quinta dos Castanheiros, Morgatoes</p>
               <p>14:00</p>
               <p>
                 Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
               </p>
-            </div>
+            </div> -->
             <div>
               <MapsLocation
                 locationCode={"Quinta+dos+Castanheiros+-+Morgatões"}
@@ -268,10 +273,9 @@
       {/if}
     </div>
     <div
-      style="margin: 5rem 0rem; display: flex;
+      style="margin: 2rem 0rem 3rem; display: flex;
     justify-content: center; "
     >
-      <!-- <h2 translated-text id="seventhText">If you need a place to stay</h2> -->
       <ExpandablePanel
         name={languages[currentLanguageCode] &&
         languages[currentLanguageCode]["seventhText"]
@@ -300,7 +304,7 @@
             <div class="stay-button-img airbnb" />
             <div class="stay-button-content">
               <span translated-text id="airbnbText">
-                Search for some accomodation on Air BnB
+                Search for some accomodation on Airbnb
               </span>
               <button
                 class="airbnb"
@@ -313,13 +317,18 @@
         </div>
       </ExpandablePanel>
     </div>
+    <div class="introduction">
+      <p>
+        Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium
+        Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56;
+        Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus
+        acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius
+        W24; otoczkakapsułki: hydroksypropylometyloceluloza.
+      </p>
+    </div>
   </div>
   <footer>
-    <h4
-      translated-text
-      id="eigthText"
-      style="font-weight: 400; font-size: 28px;"
-    >
+    <h4 translated-text id="eigthText" class="sub-title-font-size">
       You can contact us:
     </h4>
     <!-- <div>Our Contacts:</div> -->
@@ -366,6 +375,7 @@
     padding: 0;
     text-align: center;
     color: #808285;
+    font-size: 14px;
   }
 
   :global(body) {
@@ -373,8 +383,7 @@
     font-family: "Muli", sans-serif;
     font-weight: 300;
     color: #808285;
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+    font-size: 14px;
   }
 
   h1,
@@ -385,6 +394,11 @@
   h6 {
     font-family: "Alice", serif;
     color: #2a2a2a;
+  }
+
+  h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
   }
 
   .graph-overlay {
@@ -411,23 +425,6 @@
     transform: rotateY(0deg);
   }
 
-  h1 {
-    /* color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100; */
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
-  }
-
   .welcome-banner {
     color: white;
     background-color: #88a4cd;
@@ -436,7 +433,7 @@
     padding-top: 5rem;
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
   }
 
   .welcome-banner > * {
@@ -468,7 +465,8 @@
   }
 
   .introduction {
-    margin: 5rem;
+    margin: 3rem 11rem;
+    margin-bottom: 4rem;
     line-height: 27.85px;
   }
 
@@ -481,8 +479,9 @@
   .location-button {
     background-color: #f5f5f5;
     border: solid 2px #94b4e3;
-    min-width: 20rem;
+    min-width: 27rem;
     padding-bottom: 20px;
+    cursor: pointer;
   }
 
   .location-button.selected {
@@ -517,7 +516,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 17rem;
+    width: 20rem;
   }
 
   .stay-button.airbnb {
@@ -527,7 +526,7 @@
   .stay-button-img.booking {
     background-image: url(../assets/booking-img.jpg);
     border-radius: inherit;
-    height: 13rem;
+    height: 16rem;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -536,7 +535,7 @@
   .stay-button-img.airbnb {
     background-image: url(../assets/airbnb-img.webp);
     border-radius: inherit;
-    height: 13rem;
+    height: 16rem;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -618,7 +617,7 @@
   }
 
   .contact-column > span {
-    font-size: 28px;
+    font-size: 22px;
     font-family: "Alice", serif;
   }
 
@@ -626,6 +625,27 @@
     color: white;
     margin: 5px;
     font-family: "Alice", serif;
+  }
+
+  .title-font-size {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .sub-title-font-size {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .text-font-size {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
   }
 
   @media screen and (max-width: 650px) {
