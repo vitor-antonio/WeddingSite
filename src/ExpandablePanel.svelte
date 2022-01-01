@@ -19,8 +19,8 @@
       <span class="material-icons" style="font-size: 2rem;">
         {iconName}
       </span>
-      <h2>{name}</h2>
-      <i class="icon" class:active>
+      <h2 style="font-size: 30px; font-weight: 400;">{name}</h2>
+      <i class="icon" style="align-self: center; margin-left: 5%;" class:active>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -41,17 +41,23 @@
 </div>
 
 <style>
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alice', serif;
+    color: #2A2A2A;
+  }
+
   .panel-button {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .panel {
     border: 1px solid #dfdfdf;
     border-radius: 0px;
   }
+
   .header {
     display: flex;
     width: 100%;

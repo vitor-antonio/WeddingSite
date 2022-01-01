@@ -30,19 +30,19 @@
 <div class="countdown-timer">
   <div class="time-unit">
     <span>{days}</span>
-    <span>Days</span>
+    <span style="font-size: 18px;">Days</span>
   </div>
   <div class="time-unit">
     <span>{hours}</span>
-    <span>Hours</span>
+    <span style="font-size: 18px;">Hours</span>
   </div>
   <div class="time-unit">
     <span>{minutes}</span>
-    <span>Minutes</span>
+    <span style="font-size: 18px;">Minutes</span>
   </div>
   <div class="time-unit">
     <span>{seconds}</span>
-    <span>Seconds</span>
+    <span style="font-size: 18px;">Seconds</span>
   </div>
 </div>
 
@@ -52,13 +52,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
+    color: #2a2a2a;
   }
   .time-unit {
     display: flex;
     flex-direction: column;
-    margin: 25px 20px;
+    margin: 25px 6%;
+  }
+
+  .time-unit > span {
+    color: #2a2a2a;
+    font-family: 'Alice', serif;
   }
 
   @media screen and (max-width: 650px) {

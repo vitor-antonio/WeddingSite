@@ -17,8 +17,8 @@
 
   var languages = {
     pl: {
-      firstText: "Pobieramy się!",
-      secondText: "Zapisz datę",
+      firstText: "WE ARE GETTING MARRIED!",
+      // secondText: "Zapisz datę",
       thirdText: "10 Września 2022",
       fourthText: "Hello Children!",
       fifthText:
@@ -32,8 +32,8 @@
       emailText: "email:",
     },
     pt: {
-      firstText: "We Are Getting Married!",
-      secondText: "Save The Date",
+      firstText: "WE ARE GETTING MARRIED!",
+      // secondText: "Save The Date",
       thirdText: "September 10th 2022",
       fourthText: "Hello Children!",
       fifthText:
@@ -47,8 +47,8 @@
       emailText: "email:",
     },
     en: {
-      firstText: "We Are Getting Married!",
-      secondText: "Save The Date",
+      firstText: "WE ARE GETTING MARRIED!",
+      // secondText: "Save The Date",
       thirdText: "September 10th 2022",
       fourthText: "Hello Children!",
       fifthText:
@@ -101,16 +101,26 @@
       </a>
     </div>
     <div class="header-container">
-      <h2 translated-text id="firstText">We Are Getting Married!</h2>
-      <h1>Marta & Vitor</h1>
-      <p
-        style="font-size: 18px; margin-top: 15px;"
+      <h2
+        translated-text
+        id="firstText"
+        style="font-size: 16px; font-weight: 400; letter-spacing: 3px;"
+      >
+        We Are Getting Married!
+      </h2>
+      <h1 style="font-size: 90px; font-weight: 400;">Marta & Vitor</h1>
+      <!-- <p
+        style="font-size: 15px; font-weight: 300; margin-top: 15px;"
         translated-text
         id="secondText"
       >
         Save The Date
-      </p>
-      <h2 style="padding-top: 5px;" translated-text id="thirdText">
+      </p> -->
+      <h2
+        style="font-size: 40px; font-weight: 400; padding-top: 5px;"
+        translated-text
+        id="thirdText"
+      >
         September 10th 2022
       </h2>
     </div>
@@ -145,7 +155,13 @@
       <DateCountDown />
     </div>
     <div class="introduction">
-      <h2 translated-text id="fourthText">Hello Children!</h2>
+      <h2
+        translated-text
+        id="fourthText"
+        style="font-size: 40px; font-weight: 400;"
+      >
+        Hello Children!
+      </h2>
       <p translated-text id="fifthText">
         Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium
         Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56;
@@ -161,7 +177,11 @@
       <!-- <MapsLocation /> -->
     </div>
     <div class="location-section">
-      <h2 style="margin-bottom: 2rem;" translated-text id="sixthText">
+      <h2
+        style="font-size: 40px; font-weight: 400; margin-bottom: 2rem;"
+        translated-text
+        id="sixthText"
+      >
         When and Where
       </h2>
       {#if !isMobile}
@@ -295,7 +315,13 @@
     </div>
   </div>
   <footer>
-    <h4 translated-text id="eigthText">You can contact us:</h4>
+    <h4
+      translated-text
+      id="eigthText"
+      style="font-weight: 400; font-size: 28px;"
+    >
+      You can contact us:
+    </h4>
     <!-- <div>Our Contacts:</div> -->
     <div class="contacts-container">
       <div class="contact-column">
@@ -339,14 +365,26 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    color: rgb(58, 58, 58);
+    color: #808285;
   }
 
   :global(body) {
     min-height: 100vh;
-    color: hsl(0, 0%, 98%);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: "Muli", sans-serif;
+    font-weight: 300;
+    color: #808285;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Alice", serif;
+    color: #2a2a2a;
   }
 
   .graph-overlay {
@@ -491,16 +529,16 @@
     border-radius: inherit;
     height: 13rem;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
   .stay-button-img.airbnb {
-    background-image: url(../assets/airbnb-img.jpg);
+    background-image: url(../assets/airbnb-img.webp);
     border-radius: inherit;
     height: 13rem;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -559,6 +597,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
+    margin-top: 20px;
     align-self: center;
   }
 
@@ -578,11 +617,23 @@
     flex-direction: column;
   }
 
+  .contact-column > span {
+    font-size: 28px;
+    font-family: "Alice", serif;
+  }
+
   .contact-content > div > * {
     color: white;
+    margin: 5px;
+    font-family: "Alice", serif;
   }
 
   @media screen and (max-width: 650px) {
+    .introduction {
+      margin: 2rem;
+      line-height: 27.85px;
+    }
+
     .stay-buttons-container {
       flex-direction: column;
       align-items: center;
