@@ -166,11 +166,13 @@
   </div>
   <div>
     <div>
+      <!-- daysText={languages[currentLanguageCode]?.daysString} -->
       <DateCountDown
-        daysText={languages[currentLanguageCode]?.daysString}
+        
         hoursText={languages[currentLanguageCode]?.hoursString}
         minutesText={languages[currentLanguageCode]?.minutesString}
         secondsText={languages[currentLanguageCode]?.secondsString}
+        daysText="days"
       />
     </div>
     <div class="introduction">
@@ -396,14 +398,6 @@
     background-color: #f2f5f7;
     opacity: 0;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  }
-
-  .main-intro-text > p {
-    margin: 2rem 0rem;
-  }
-
-  .spaces {
-    margin: 2rem 0rem;
   }
 
   .graph-container {
