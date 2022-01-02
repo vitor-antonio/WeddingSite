@@ -15,7 +15,7 @@
     window.open(url, "_blank");
   }
 
-  var languages = {
+  let languages = {
     pl: {
       firstText: "POBIERAMY SIĘ!",
       thirdText: "10 Wrzesień 2022",
