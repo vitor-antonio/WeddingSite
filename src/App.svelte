@@ -166,14 +166,14 @@
   </div>
   <div>
     <div>
-      <!-- daysText={languages[currentLanguageCode]?.daysString} -->
-      <DateCountDown
-        
-        hoursText={languages[currentLanguageCode]?.hoursString}
-        minutesText={languages[currentLanguageCode]?.minutesString}
-        secondsText={languages[currentLanguageCode]?.secondsString}
-        daysText="days"
-      />
+      {#if languages[currentLanguageCode]}
+        <DateCountDown
+          daysText={languages[currentLanguageCode]?.daysString}
+          hoursText={languages[currentLanguageCode]?.hoursString}
+          minutesText={languages[currentLanguageCode]?.minutesString}
+          secondsText={languages[currentLanguageCode]?.secondsString}
+        />
+      {/if}
     </div>
     <div class="introduction">
       <!-- svelte-ignore a11y-missing-content -->
