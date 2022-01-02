@@ -172,7 +172,6 @@
         Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus
         salivarius W24.
       </p>
-      <!-- <MapsLocation /> -->
     </div>
     <div class="location-section">
       <h2
@@ -221,6 +220,7 @@
           </button>
           <div>
             <MapsLocation
+              isMobileView={false}
               locationCode={showFirstLocation
                 ? "Igreja+de+Colmeias"
                 : "Quinta+dos+Castanheiros+-+Morgatões"}
@@ -238,7 +238,10 @@
             isSmallerButton={false}
           >
             <div>
-              <MapsLocation locationCode={"Igreja+de+Colmeias"} />
+              <MapsLocation
+                isMobileView={true}
+                locationCode={"Igreja+de+Colmeias"}
+              />
             </div>
           </ExpandablePanel>
         </div>
@@ -253,6 +256,7 @@
           >
             <div>
               <MapsLocation
+                isMobileView={true}
                 locationCode={"Quinta+dos+Castanheiros+-+Morgatões"}
               />
             </div>
@@ -325,7 +329,7 @@
         <div class="contact-content">
           <div>
             <span translated-text id="phoneText">phone: </span><span>
-              +48 602 624 712 <br style="margin-bottom: 5px;"/></span
+              +48 602 624 712 <br style="margin-bottom: 5px;" /></span
             >
           </div>
           <div>
