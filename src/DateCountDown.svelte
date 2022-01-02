@@ -3,6 +3,11 @@
 
   let weddingDate = new Date("09 / 10 / 2022 12:00").getTime();
 
+  export let daysText = "";
+  export let hoursText = "";
+  export let minutesText = "";
+  export let secondsText = "";
+
   let days = 0;
   let hours = 0;
   let minutes = 0;
@@ -30,19 +35,19 @@
 <div class="countdown-timer">
   <div class="time-unit">
     <span>{days}</span>
-    <span class="time-unit-legend">Days</span>
+    <span class="time-unit-legend">{daysText}</span>
   </div>
   <div class="time-unit">
     <span>{hours}</span>
-    <span class="time-unit-legend">Hours</span>
+    <span class="time-unit-legend">{hoursText}</span>
   </div>
   <div class="time-unit">
     <span>{minutes}</span>
-    <span class="time-unit-legend">Minutes</span>
+    <span class="time-unit-legend">{minutesText}</span>
   </div>
   <div class="time-unit">
     <span>{seconds}</span>
-    <span class="time-unit-legend">Seconds</span>
+    <span class="time-unit-legend">{secondsText}</span>
   </div>
 </div>
 

@@ -17,55 +17,67 @@
 
   var languages = {
     pl: {
-      firstText: "WE ARE GETTING MARRIED!",
-      // secondText: "Zapisz datę",
+      firstText: "POBIERAMY SIĘ!",
       thirdText: "10 Wrzesień 2022",
-      fourthText: "Hello Children!",
+      fourthText: "Witajcie!",
       fifthText:
-        "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
-      sixthText: "When and Where",
-      seventhText: "If you need a place to stay",
-      bookingText: "Search for some accomodation on Booking.com",
-      airbnbText: "Search for some accomodation on Airbnb",
-      eigthText: "Contacts",
-      phoneText: "phone:",
+        "<p style='margin: 1rem 0rem; text-align: justify;'>Wszystko zaczęło się w 2012 roku, kiedy poznaliśmy się przez Internet. Niedługo później, bo już po roku, Vitor przyleciał do Polski i oficjalnie zostaliśmy parą. Już wtedy wiedzieliśmy, że ten związek ma przyszłość, dlatego zamieszkaliśmy razem we Wrocławiu pół roku później. Pomimo tego, że nasze wspólne życie nie zawsze było łatwe i kolorowe, jesteśmy szczęśliwi i cieszymy się z tego, co razem osiągnęliśmy, dlatego też chcemy Wam powiedzieć, że po 9 latach związku <span style='font-weight: 600;'>bierzemy ślub!</span> Będzie nam niezmiernie miło, jeśli będziecie towarzyszyć Nam w tym wyjątkowym dniu, <span style='font-weight: 600;'>10 września 2022 roku</span>. </p><p style='margin: 1rem 0rem; text-align: justify;'>Ślub i wesele odbędą się <span style='font-weight: 600;'>w Portugalii</span>, a dokładnie w rodzinnej miejscowości Vitora - <span style='font-weight: 600;'>Leiria</span>. To miejscowość położona w zachodniej części tego kraju, oddalona od Oceanu Atlantyckiego o około 20 km i licząca około 130 tysięcy mieszkańców. Wrzesień to miesiąc, kiedy pogoda w tym kraju jest jeszcze sprzyjająca, a średnia temperatura wynosi  około 25 stopni Celsjusza. Jest to idealny czas na to, by odwiedzić Portugalię, która jest jednym z tych uroczych miejsc, o których można z pełnym przekonaniem powiedzieć, że mają wszystko, by Was zachwycić: historyczne miasta, światowej sławy kuchnię, niesamowite krajobrazy i jedne z najbardziej spektakularnych plaż na świecie. Będziecie mogli się o tym przekonać już we wrześniu, przy okazji wizyty na naszym ślubie i weselu. </p><p style='margin: 1rem 0rem; text-align: justify;'>Nie zdradzimy Wam od razu wszystkiego, co dla Was zaplanowaliśmy, ale na pewno będzie to niezapomniane, międzykulturowe wydarzenie i doświadczenie. Choć wesela w Portugalii różnią się nieco od wesel organizowanych w Polsce, to atmosfera jest równie gorąca i zabawa trwa od godziny 12-tej w południe do białego rana! Będziecie mogli skosztować portugalskich specjałów, w tym świeżych ryb, owoców morza i  lokalnych, mięsnych potraw, ale również jedyny w swoim rodzaju deser - Pastéis de nata, który skradnie serce każdego łasucha. Oczywiście nie zabraknie także słynnego na całym świecie portugalskiego wina - Porto, którym będziemy mogli wspólnie wznosić toasty za zdrowie naszych Gości. Przyjęcie weselne trwa wiele godzin, dlatego też w Portugalii nie obchodzi się “poprawin” - następnego dnia będziecie mogli na spokojnie odespać nieprzespaną noc. </p><p style='margin: 1rem 0rem; text-align: justify;'>Ślub odbędzie się w uroczym, małym kościele w <span style='font-weight: 600;'>Colmeias</span>, skąd pochodzi Vitor. Przyjęcie zaplanowaliśmy natomiast w <span style='font-weight: 600;'>Quinta dos Castanheiros - Morgatões</span>, sali weselnej oddalonej od kościoła o 5 km. Wszystko oczywiście w bliskiej odległości od miejscowości Leiria (14 km od Colmeias). W dniu ślubu planujemy zorganizować dla Was dojazd z Leiria do kościoła oraz na salę weselną, a także z powrotem do Leiria. Odnośnie przylotu do Portugalii, najlepiej będzie Wam dolecieć na lotnisko w Lizbonie, a następnie dojechać do Leiria, która jest oddalona od lotniska o 140 km (2 godziny drogi). Dalsze wskazówki odnośnie transportu przekażemy Wam bliżej terminu ślubu, abyście mogli na spokojnie i bez stresu zorganizować swoją podróż.</p><p style='margin: 1rem 0rem; text-align: justify;'>Oficjalne zaproszenia również planujemy przekazać Wam bliżej terminu ślubu, jednak będzie nam bardzo miło, jeśli  już teraz zarezerwujecie sobie termin - <span style='font-weight: 600;'>10 września 2022 roku</span>, aby móc towarzyszyć Nam w tym szczególnym dniu. Mamy nadzieję, że ten czas będzie wyjątkowy również dla Was i zapamiętacie Nasz ślub i wesele jako niezapomniane wydarzenie! </p>",
+      sixthText: "Gdzie i Kiedy",
+      seventhText: "Jeśli potrzebujesz miesjca na nocleg",
+      bookingText: "Szukaj noclegu na Booking.com",
+      airbnbText: "Szukaj noclegu na Airbnb",
+      eigthText: "Kontakt",
+      phoneText: "telefon:",
       emailText: "email:",
-      churchCeremony: "Kościół",
-      celebrationSalon: "Sala"
+      churchCeremony: "Ceremonia w Kościele",
+      celebrationSalon: "Sala Weselna",
+      daysString: "Dni",
+      hoursString: "Godzin",
+      minutesString: "Minut",
+      secondsString: "Sekund",
+      bottomText: "<p style='margin: 1rem 0rem; text-align: justify;'>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p style='margin: 1rem 0rem; text-align: center;'>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>"
     },
     pt: {
-      firstText: "WE ARE GETTING MARRIED!",
-      // secondText: "Save The Date",
-      thirdText: "September 10th 2022",
-      fourthText: "Hello Children!",
+      firstText: "VAMOS DAR O NÓ!",
+      thirdText: "10 de Setembro de 2022",
+      fourthText: "Olá!",
       fifthText:
         "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
-      sixthText: "When and Where",
-      seventhText: "If you need a place to stay",
-      bookingText: "Search for some accomodation on Booking.com",
-      airbnbText: "Search for some accomodation on Airbnb",
-      eigthText: "Contacts",
-      phoneText: "phone:",
+      sixthText: "Quando e Onde",
+      seventhText: "Se presisarem de alojamento",
+      bookingText: "Procurar alojamento no Booking.com",
+      airbnbText: "Procurar alojamento no Airbnb",
+      eigthText: "Contactos",
+      phoneText: "telefone:",
       emailText: "email:",
-      churchCeremony: "Church Ceremony",
-      celebrationSalon: "Celebration Salon"
+      churchCeremony: "Cerimónia Religiosa",
+      celebrationSalon: "Salão de Baquete",
+      daysString: "Dias",
+      hoursString: "Horas",
+      minutesString: "Minutos",
+      secondsString: "Segundos",
+      bottomText: "<p>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>"
     },
     en: {
       firstText: "WE ARE GETTING MARRIED!",
-      // secondText: "Save The Date",
       thirdText: "September 10th 2022",
-      fourthText: "Hello Children!",
+      fourthText: "Hello!",
       fifthText:
         "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
       sixthText: "When and Where",
       seventhText: "If you need a place to stay",
-      bookingText: "Search for some accomodation on Booking.com",
-      airbnbText: "Search for some accomodation on Airbnb",
+      bookingText: "Search on Booking.com",
+      airbnbText: "Search on Airbnb",
       eigthText: "Contacts",
       phoneText: "phone:",
       emailText: "email:",
       churchCeremony: "Church Ceremony",
-      celebrationSalon: "Celebration Salon"
+      celebrationSalon: "Wedding Hall",
+      daysString: "Days",
+      hoursString: "Hours",
+      minutesString: "Minutes",
+      secondsString: "Seconds",
+      bottomText: "<p>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>"
     },
   };
 
@@ -111,7 +123,7 @@
       <h2
         translated-text
         id="firstText"
-        style="letter-spacing: 3px;"
+        style="letter-spacing: 4px;"
         class="text-font-size"
       />
       <h1 class="main-title-font">Marta & Vitor</h1>
@@ -151,12 +163,17 @@
   </div>
   <div>
     <div>
-      <DateCountDown />
+      <DateCountDown
+        daysText={languages[currentLanguageCode]?.daysString}
+        hoursText={languages[currentLanguageCode]?.hoursString}
+        minutesText={languages[currentLanguageCode]?.minutesString}
+        secondsText={languages[currentLanguageCode]?.secondsString}
+      />
     </div>
     <div class="introduction">
       <!-- svelte-ignore a11y-missing-content -->
       <h2 translated-text id="fourthText" class="title-font-size" />
-      <p translated-text id="fifthText" />
+      <div class="main-intro-text" translated-text id="fifthText" ></div>
     </div>
     <div class="location-section">
       <!-- svelte-ignore a11y-missing-content -->
@@ -197,7 +214,9 @@
             >
               celebration
             </span>
-            <h3 style="margin-bottom: 10px;">{languages[currentLanguageCode]?.celebrationSalon}</h3>
+            <h3 style="margin-bottom: 10px;">
+              {languages[currentLanguageCode]?.celebrationSalon}
+            </h3>
             <p>Quinta dos Castanheiros, Morgatoes</p>
             <p>14:00</p>
             <p>
@@ -263,8 +282,8 @@
           <div class="stay-button">
             <div class="stay-button-img booking" />
             <div class="stay-button-content">
-              <span translated-text id="bookingText">
-              </span>
+              <!-- translated-text id="bookingText" -->
+              <span>{languages[currentLanguageCode]?.bookingText}</span>
               <button
                 class="booking"
                 on:click={() => navigateToLink(bookingLink)}
@@ -277,8 +296,8 @@
           <div class="stay-button airbnb">
             <div class="stay-button-img airbnb" />
             <div class="stay-button-content">
-              <span translated-text id="airbnbText">
-              </span>
+              <!-- translated-text id="airbnbText" -->
+              <span>{languages[currentLanguageCode]?.airbnbText}</span>
               <button
                 class="airbnb"
                 on:click={() => navigateToLink(airbnbLink)}
@@ -291,12 +310,7 @@
       </ExpandablePanel>
     </div>
     <div class="introduction bottom">
-      <p>
-        Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium
-        Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56;
-        Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus
-        acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius
-        W24; otoczkakapsułki: hydroksypropylometyloceluloza.
+      <p translated-text id="bottomText">
       </p>
     </div>
   </div>
@@ -367,7 +381,7 @@
   h6 {
     /* font-family: "Alice", serif; */
     /* font-family: 'Libre Baskerville', serif; */
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     color: #2a2a2a;
   }
 
@@ -380,6 +394,14 @@
     background-color: #f2f5f7;
     opacity: 0;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+
+  .main-intro-text > p {
+    margin: 2rem 0rem;
+  }
+
+  .spaces {
+    margin: 2rem 0rem;
   }
 
   .graph-container {
@@ -520,7 +542,7 @@
     display: flex;
     flex-direction: column;
     width: 85%;
-    height: 11rem;
+    height: 9rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -596,13 +618,13 @@
 
   .contact-column > span {
     font-size: 25px;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
   }
 
   .contact-content > div > * {
     color: white;
     margin: 5px;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 16px;
     letter-spacing: 1px;
   }
