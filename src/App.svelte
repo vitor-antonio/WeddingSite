@@ -35,7 +35,8 @@
       hoursString: "Godzin",
       minutesString: "Minut",
       secondsString: "Sekund",
-      bottomText: "<p style='margin: 1rem 0rem; text-align: justify;'>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p style='margin: 1rem 0rem; text-align: center;'>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>"
+      bottomText:
+        "<p style='margin: 1rem 0rem; text-align: justify;'>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p style='margin: 1rem 0rem; text-align: center;'>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>",
     },
     pt: {
       firstText: "VAMOS DAR O NÓ!",
@@ -56,7 +57,8 @@
       hoursString: "Horas",
       minutesString: "Minutos",
       secondsString: "Segundos",
-      bottomText: "<p>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>"
+      bottomText:
+        "<p>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>",
     },
     en: {
       firstText: "WE ARE GETTING MARRIED!",
@@ -77,7 +79,8 @@
       hoursString: "Hours",
       minutesString: "Minutes",
       secondsString: "Seconds",
-      bottomText: "<p>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>"
+      bottomText:
+        "<p>Chcemy, aby ta strona była dla Was pomocna i zawierała niezbędne informacje, które pomogą Wam zorganizować swój pobyt w Portugalii na Naszym ślubie i weselu, dlatego też będziemy ją systematycznie rozwijać. Planujemy dodać m.in. informacje dotyczące dojazdu z lotniska w Lizbonie do miejscowości Leiria, a także polecane miejsca do zobaczenia w Portugalii. </p><p>Jeśli macie jakiekolwiek pytania - skontaktujcie się z Nami na social media (Facebook), telefonicznie albo bezpośrednio. Chętnie udzielimy Wam odpowiedzi.</p>",
     },
   };
 
@@ -173,7 +176,7 @@
     <div class="introduction">
       <!-- svelte-ignore a11y-missing-content -->
       <h2 translated-text id="fourthText" class="title-font-size" />
-      <div class="main-intro-text" translated-text id="fifthText" ></div>
+      <div class="main-intro-text" translated-text id="fifthText" />
     </div>
     <div class="location-section">
       <!-- svelte-ignore a11y-missing-content -->
@@ -310,8 +313,7 @@
       </ExpandablePanel>
     </div>
     <div class="introduction bottom">
-      <p translated-text id="bottomText">
-      </p>
+      <p translated-text id="bottomText" />
     </div>
   </div>
   <footer>
