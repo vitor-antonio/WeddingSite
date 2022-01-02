@@ -80,7 +80,7 @@
       minutesString: "Minutes",
       secondsString: "Seconds",
       bottomText:
-        "<p style='margin: 1rem 0rem; text-align: justify;'>We want this page to be helpful for you and contain the necessary information that will help you organize your stay in Portugal, therefore we will continue to update it. We plan to add, among others, information on how to travel from Lisbon airport to Leiria, as well as recommended places to see in Portugal. </p><p style='margin: 1rem 0rem; text-align: center;'>If you have any questions - contact us on social media (Facebook), by phone or directly. We will be happy to answer them.</p>",
+        "<p style='margin: 1rem 0rem; text-align: justify;'>We want this page to be helpful for you and contain the necessary information that will help you organize your stay in Portugal, therefore we will continue to update it. We plan to add, among others, information on how to travel from Lisbon airport to Leiria, as well as recommended places to see in Portugal. </p><p style='margin: 1rem 0rem; text-align: justify;'>If you have any questions - contact us on social media (Facebook), by phone or directly. We will be happy to answer them.</p>",
     },
   };
 
