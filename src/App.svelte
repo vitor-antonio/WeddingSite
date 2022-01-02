@@ -100,8 +100,9 @@
         element.innerHTML = languages[currentLanguageCode][element.id];
       });
     } else {
+      currentLanguageCode = "pl"
       elementsToTranslate.forEach(function (element) {
-        element.innerHTML = languages["pl"][element.id];
+        element.innerHTML = languages[currentLanguageCode][element.id];
       });
     }
   });
@@ -166,14 +167,12 @@
   </div>
   <div>
     <div>
-      {#if languages[currentLanguageCode]}
-        <DateCountDown
-          daysText={languages[currentLanguageCode]?.daysString}
-          hoursText={languages[currentLanguageCode]?.hoursString}
-          minutesText={languages[currentLanguageCode]?.minutesString}
-          secondsText={languages[currentLanguageCode]?.secondsString}
-        />
-      {/if}
+      <DateCountDown
+        daysText={languages[currentLanguageCode]?.daysString}
+        hoursText={languages[currentLanguageCode]?.hoursString}
+        minutesText={languages[currentLanguageCode]?.minutesString}
+        secondsText={languages[currentLanguageCode]?.secondsString}
+      />
     </div>
     <div class="introduction">
       <!-- svelte-ignore a11y-missing-content -->
