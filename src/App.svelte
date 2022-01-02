@@ -264,10 +264,7 @@
         </div>
       {/if}
     </div>
-    <div
-      style="margin: 2rem 0rem 3rem; display: flex;
-    justify-content: center; "
-    >
+    <div class="expandable-panel-container">
       <ExpandablePanel
         name={languages[currentLanguageCode] &&
         languages[currentLanguageCode]["seventhText"]
@@ -309,7 +306,7 @@
         </div>
       </ExpandablePanel>
     </div>
-    <div class="introduction">
+    <div class="introduction bottom">
       <p>
         Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium
         Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56;
@@ -627,6 +624,12 @@
     display: flex;
   }
 
+  .expandable-panel-container {
+    margin: 2rem 0rem 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
   .title-font-size {
     font-size: 30px;
     font-weight: 400;
@@ -651,12 +654,19 @@
   @media screen and (max-width: 650px) {
     .introduction {
       margin: 2rem;
+      margin-bottom: 3rem;
       line-height: 27.85px;
+    }
+
+    .introduction.bottom {
+      margin-top: 1rem;
     }
 
     .stay-buttons-container {
       flex-direction: column;
       align-items: center;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
     }
 
     .stay-button.airbnb {
@@ -672,6 +682,7 @@
     .welcome-banner {
       padding-top: 2rem;
     }
+
     .language-switcher {
       margin: 0rem 0rem 3rem 0rem;
       justify-content: center;
@@ -681,6 +692,10 @@
       flex-direction: column;
       justify-content: center;
       height: auto;
+    }
+
+    .expandable-panel-container {
+      margin: 1rem 0rem 0rem;
     }
 
     .contacts-container > .contact-column {

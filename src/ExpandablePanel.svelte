@@ -11,7 +11,7 @@
   $: active = group === name;
 </script>
 
-<div class="panel" class:smaller={isSmallerButton}>
+<div class="panel" class:smaller={isSmallerButton} class:expanded={isSmallerButton && active}>
   {#if isSmallerButton}
     <button
       class="button-smaller"
@@ -184,13 +184,16 @@
   .header:active {
     background: none;
   }
+
   span {
     line-height: 24px;
   }
+
   .icon {
     line-height: 0.5;
     transition: 0.25s linear;
   }
+
   .active {
     transform: rotate(-180deg);
   }
@@ -215,6 +218,10 @@
     .panel-button-smaller > .title-font-size {
       font-weight: 400;
       font-size: 18px;
+    }
+
+    .expanded {
+      padding-bottom: 2rem;
     }
   }
 </style>
