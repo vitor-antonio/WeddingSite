@@ -30,6 +30,8 @@
       eigthText: "Contacts",
       phoneText: "phone:",
       emailText: "email:",
+      churchCeremony: "Kościół",
+      celebrationSalon: "Sala"
     },
     pt: {
       firstText: "WE ARE GETTING MARRIED!",
@@ -45,6 +47,8 @@
       eigthText: "Contacts",
       phoneText: "phone:",
       emailText: "email:",
+      churchCeremony: "Church Ceremony",
+      celebrationSalon: "Celebration Salon"
     },
     en: {
       firstText: "WE ARE GETTING MARRIED!",
@@ -60,6 +64,8 @@
       eigthText: "Contacts",
       phoneText: "phone:",
       emailText: "email:",
+      churchCeremony: "Church Ceremony",
+      celebrationSalon: "Celebration Salon"
     },
   };
 
@@ -101,23 +107,21 @@
       </a>
     </div>
     <div class="header-container">
+      <!-- svelte-ignore a11y-missing-content -->
       <h2
         translated-text
         id="firstText"
         style="letter-spacing: 3px;"
         class="text-font-size"
-      >
-        We Are Getting Married!
-      </h2>
+      />
       <h1 class="main-title-font">Marta & Vitor</h1>
+      <!-- svelte-ignore a11y-missing-content -->
       <h2
         style="padding-top: 5px;"
         class="title-font-size"
         translated-text
         id="thirdText"
-      >
-        September 10th 2022
-      </h2>
+      />
     </div>
 
     <div class="graph-overlay" />
@@ -150,38 +154,18 @@
       <DateCountDown />
     </div>
     <div class="introduction">
-      <h2 translated-text id="fourthText" class="title-font-size">
-        Hello Children!
-      </h2>
-      <p translated-text id="fifthText">
-        Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium
-        Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56;
-        Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus
-        acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius
-        W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera
-        bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium
-        lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56,
-        Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus
-        acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis
-        W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23;
-        Lactobacillus salivarius W24; otoczkakapsułki:
-        hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109
-        CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52,
-        Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis
-        W19, Lactococcus lactis W58, Lactobacillus acidophilus W37,
-        Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus
-        salivarius W24.
-      </p>
+      <!-- svelte-ignore a11y-missing-content -->
+      <h2 translated-text id="fourthText" class="title-font-size" />
+      <p translated-text id="fifthText" />
     </div>
     <div class="location-section">
+      <!-- svelte-ignore a11y-missing-content -->
       <h2
         style="margin-bottom: 2rem;"
         class="title-font-size"
         translated-text
         id="sixthText"
-      >
-        When and Where
-      </h2>
+      />
       {#if !isMobile}
         <div>
           <button
@@ -195,7 +179,9 @@
             >
               church
             </span>
-            <h3 style="margin-bottom: 10px;">Church Ceremony</h3>
+            <h3 style="margin-bottom: 10px;">
+              {languages[currentLanguageCode]?.churchCeremony}
+            </h3>
             <p>Igreja de Colmeias</p>
             <p>12:00</p>
             <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
@@ -211,7 +197,7 @@
             >
               celebration
             </span>
-            <h3 style="margin-bottom: 10px;">Celebration Salon</h3>
+            <h3 style="margin-bottom: 10px;">{languages[currentLanguageCode]?.celebrationSalon}</h3>
             <p>Quinta dos Castanheiros, Morgatoes</p>
             <p>14:00</p>
             <p>
@@ -230,7 +216,7 @@
       {:else}
         <div class="expandable-panel">
           <ExpandablePanel
-            name={"Church Ceremony"}
+            name={languages[currentLanguageCode]?.churchCeremony}
             iconName={"church"}
             place={"Igreja de Colmeias"}
             time={"12:00"}
@@ -247,7 +233,7 @@
         </div>
         <div class="expandable-panel">
           <ExpandablePanel
-            name={"Celebration Salon"}
+            name={languages[currentLanguageCode]?.celebrationSalon}
             iconName={"celebration"}
             place={"Quinta dos Castanheiros, Morgatoes"}
             time={"14:00"}
@@ -278,7 +264,6 @@
             <div class="stay-button-img booking" />
             <div class="stay-button-content">
               <span translated-text id="bookingText">
-                Search for some accomodation on Booking.com
               </span>
               <button
                 class="booking"
@@ -293,7 +278,6 @@
             <div class="stay-button-img airbnb" />
             <div class="stay-button-content">
               <span translated-text id="airbnbText">
-                Search for some accomodation on Airbnb
               </span>
               <button
                 class="airbnb"
