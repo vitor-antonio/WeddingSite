@@ -65,7 +65,7 @@
 
   .time-unit > span {
     color: #2a2a2a;
-    font-family: "Alice", serif;
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
   }
 

@@ -90,7 +90,7 @@
   h4,
   h5,
   h6 {
-    font-family: "Alice", serif;
+    font-family: 'Playfair Display', serif;
     color: #2a2a2a;
   }
 

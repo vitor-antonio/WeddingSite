@@ -19,7 +19,7 @@
     pl: {
       firstText: "WE ARE GETTING MARRIED!",
       // secondText: "Zapisz datę",
-      thirdText: "10 Września 2022",
+      thirdText: "10 Wrzesień 2022",
       fourthText: "Hello Children!",
       fifthText:
         "Skrobia kukurydziana, maltodekstryny, białko roślinne, Bifidobacterium Iactis W52; Lactobacillus brevis W63; Lactobacillus casei W56; Lactococcus lactis W19; Lactococcus lactis W58; Lactobacillus acidophilus W37; Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63,  Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24. Bifidobacterium bifidum W23; Lactobacillus salivarius W24; otoczkakapsułki: hydroksypropylometyloceluloza. 1 kapsułka zawiera bakterii ≥2.5 x 109 CFU/g żywych szczepów bakterii: Bifidobacterium lactis W52, Lactobacillus brevis W63, Lactobacillus casei W56, Lactococcus lactis W19, Lactococcus lactis W58, Lactobacillus acidophilus W37, Bifidobacterium bifidum W23, Bifidobacterium lactis W51, Lactobacillus salivarius W24.",
@@ -365,7 +365,9 @@
   h4,
   h5,
   h6 {
-    font-family: "Alice", serif;
+    /* font-family: "Alice", serif; */
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Playfair Display', serif;
     color: #2a2a2a;
   }
 
@@ -594,13 +596,13 @@
 
   .contact-column > span {
     font-size: 25px;
-    font-family: "Alice", serif;
+    font-family: 'Playfair Display', serif;
   }
 
   .contact-content > div > * {
     color: white;
     margin: 5px;
-    font-family: "Alice", serif;
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     letter-spacing: 1px;
   }
