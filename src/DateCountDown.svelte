@@ -30,19 +30,19 @@
 <div class="countdown-timer">
   <div class="time-unit">
     <span>{days}</span>
-    <span style="font-size: 18px;">Days</span>
+    <span class="time-unit-legend">Days</span>
   </div>
   <div class="time-unit">
     <span>{hours}</span>
-    <span style="font-size: 18px;">Hours</span>
+    <span class="time-unit-legend">Hours</span>
   </div>
   <div class="time-unit">
     <span>{minutes}</span>
-    <span style="font-size: 18px;">Minutes</span>
+    <span class="time-unit-legend">Minutes</span>
   </div>
   <div class="time-unit">
     <span>{seconds}</span>
-    <span style="font-size: 18px;">Seconds</span>
+    <span class="time-unit-legend">Seconds</span>
   </div>
 </div>
 
@@ -56,6 +56,7 @@
     font-weight: 500;
     color: #2a2a2a;
   }
+
   .time-unit {
     display: flex;
     flex-direction: column;
@@ -64,8 +65,12 @@
 
   .time-unit > span {
     color: #2a2a2a;
-    font-family: 'Alice', serif;
+    font-family: "Alice", serif;
     font-size: 24px;
+  }
+
+  .time-unit-legend {
+    font-size: 18px !important;
   }
 
   @media screen and (max-width: 650px) {
@@ -74,7 +79,15 @@
     }
 
     .time-unit {
-      margin: 15px 10px;
+      margin: 15px 6%;
+    }
+
+    .time-unit > span {
+      font-size: 20px;
+    }
+
+    .time-unit-legend {
+      font-size: 14px !important;
     }
   }
 </style>

@@ -109,7 +109,7 @@
       >
         We Are Getting Married!
       </h2>
-      <h1 style="font-size: 64px; font-weight: 400;">Marta & Vitor</h1>
+      <h1 class="main-title-font">Marta & Vitor</h1>
       <h2
         style="padding-top: 5px;"
         class="title-font-size"
@@ -237,11 +237,6 @@
             location={"R. Central nº3411 <br /> 2420-205 Leiria, Portugal"}
             isSmallerButton={false}
           >
-            <!-- <div class="panel-content-details">
-              <p>Igreja de Colmeias</p>
-              <p>12:00</p>
-              <p>R. Central nº3411 <br /> 2420-205 Leiria, Portugal</p>
-            </div> -->
             <div>
               <MapsLocation locationCode={"Igreja+de+Colmeias"} />
             </div>
@@ -256,13 +251,6 @@
             location={"Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria"}
             isSmallerButton={false}
           >
-            <!-- <div class="panel-content-details">
-              <p>Quinta dos Castanheiros, Morgatoes</p>
-              <p>14:00</p>
-              <p>
-                Estrada Nacional 1/IC2, Km 129 <br /> 2410-656 Boa Vista, Leiria
-              </p>
-            </div> -->
             <div>
               <MapsLocation
                 locationCode={"Quinta+dos+Castanheiros+-+Morgatões"}
@@ -331,14 +319,13 @@
     <h4 translated-text id="eigthText" class="title-font-size">
       You can contact us:
     </h4>
-    <!-- <div>Our Contacts:</div> -->
     <div class="contacts-container">
       <div class="contact-column">
         <span>Marta</span>
         <div class="contact-content">
           <div>
             <span translated-text id="phoneText">phone: </span><span>
-              +48 602 624 712</span
+              +48 602 624 712 <br style="margin-bottom: 5px;"/></span
             >
           </div>
           <div>
@@ -594,7 +581,6 @@
   .contacts-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
     width: 80%;
     margin-top: 10px;
@@ -604,6 +590,7 @@
   .contact-column {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-size: 1.2rem;
     font-weight: 500;
   }
@@ -615,6 +602,8 @@
   .contact-content {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    /* justify-content: space-between; */
   }
 
   .contact-column > span {
@@ -630,18 +619,22 @@
     letter-spacing: 1px;
   }
 
+  .contact-content > div {
+    display: flex;
+  }
+
   .title-font-size {
     font-size: 30px;
     font-weight: 400;
   }
 
-  .sub-title-font-size {
-    font-size: 25px;
+  .text-font-size {
+    font-size: 14px;
     font-weight: 400;
   }
 
-  .text-font-size {
-    font-size: 14px;
+  .main-title-font {
+    font-size: 64px;
     font-weight: 400;
   }
 
@@ -690,12 +683,19 @@
       padding: 1rem 0rem;
     }
 
-    .panel-content-details {
-      padding: 1rem 0rem;
+    .title-font-size {
+      font-size: 24px;
+      font-weight: 400;
     }
 
-    .panel-content-details > * {
-      padding: 0.3rem 0rem;
+    .text-font-size {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .main-title-font {
+      font-size: 34px;
+      font-weight: 400;
     }
   }
 </style>

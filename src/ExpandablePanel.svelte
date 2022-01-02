@@ -106,7 +106,7 @@
     color: white !important;
   }
 
-  .icon.active > svg > path {
+  .panel-button > .icon.active > svg > path {
     fill: white;
   }
 
