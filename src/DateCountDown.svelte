@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
 
-  let weddingDate = new Date("09 / 10 / 2022 12:00").getTime();
+  let weddingDate = new Date("2022-09-10T12:00").getTime();
 
   export let daysText = "";
   export let hoursText = "";
